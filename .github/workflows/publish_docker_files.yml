@@ -1,4 +1,4 @@
-name: Create and publish a Docker image
+name: Create and publish docker images.
 
 on:
   push:
@@ -8,7 +8,7 @@ env:
   REGISTRY: ghcr.io
 
 jobs:
-  build-and-push-image:
+  build-and-push-goland-alpine:
     runs-on: ubuntu-latest
 
     # Sets the permissions granted to the `GITHUB_TOKEN` for the actions in this job.
