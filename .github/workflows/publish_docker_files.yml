@@ -46,7 +46,7 @@ jobs:
           context: .
           file: ./goland_alpine.Dockerfile
           push: true
-          tags: ${{ github.repository }}/goland-alpine:latest
+          tags: ${{ env.REGISTRY }}/${{ github.repository }}/goland-alpine:latest
           platforms: linux/amd64,linux/arm64
           cache-from: type=gha
           cache-to: type=gha,mode=max
